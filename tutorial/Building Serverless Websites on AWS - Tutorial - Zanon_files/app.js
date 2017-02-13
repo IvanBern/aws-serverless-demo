@@ -1,0 +1,1 @@
+var zanonApp=angular.module("zanonApp",["ngRoute","ui.bootstrap","zanonControllers","dirDisqus"]);zanonApp.run(["$rootScope",function(o){o.$on("$routeChangeSuccess",function(n,t,e){o.title=t.$$route.title?t.$$route.title+" - ":""})}]);
